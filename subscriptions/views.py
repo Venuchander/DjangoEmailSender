@@ -6,10 +6,10 @@ import os
 
 def subscribe(request):
     if request.method == 'POST':
-        subject = 'Python (Selenium) Assignment - Venuchander'
-        message = 'Sending Email through Gmail'
-        recipient = 'tech@themedius.ai'
-        cc_recipient = 'HR@themedius.ai'
+        subject = 'Subject'
+        message = 'Message'
+        recipient = 'yourname@gmail.com'
+        cc_recipient = 'yourname@gmail.com'
         
         # Create the email
         email = EmailMessage(
