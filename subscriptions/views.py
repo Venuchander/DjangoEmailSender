@@ -8,8 +8,8 @@ def subscribe(request):
     if request.method == 'POST':
         subject = 'Subject'
         message = 'Message'
-        recipient = 'yourname@gmail.com'
-        cc_recipient = 'yourname@gmail.com'
+        recipient = 'fintracker00@gmail.com'
+        cc_recipient = 'venuchander11@gmail.com'
         
         # Create the email
         email = EmailMessage(
