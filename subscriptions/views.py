@@ -21,7 +21,7 @@ def subscribe(request):
         )
         
         # Attach the PNG file
-        file_path = os.path.join(settings.BASE_DIR, 'static/images/attachment.png')
+        file_path = os.path.join(settings.BASE_DIR, 'static/image/attachment.png')
         email.attach_file(file_path)
         
         # Send the email
