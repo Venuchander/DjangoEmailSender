@@ -58,7 +58,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'venuchander1@gmail.com'
-EMAIL_HOST_PASSWORD = 'dcryizmzudqlbujq'
+EMAIL_HOST_PASSWORD = 'Your Password'
 
 import smtplib  
 with smtplib.SMTP(EMAIL_HOST, EMAIL_PORT) as smtp:
