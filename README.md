@@ -1,6 +1,6 @@
 # Sending Email with Attachment using Django
 
-1. This project demonstrates how to send an email with an attachment (specifically, an image file named `attachment.png` using Django.
+1. This project demonstrates how to send an email with an attachment.
 2. This project showcases a simple functionality where upon execution, a submit button appears. Clicking this button triggers an email to be sent to the recipient, along with a CC.
 
 ### Clone the Repository
