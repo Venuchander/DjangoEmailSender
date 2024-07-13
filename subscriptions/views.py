@@ -8,8 +8,8 @@ def subscribe(request):
     if request.method == 'POST':
         subject = 'Python (Selenium) Assignment - Venuchander'
         message = 'https://github.com/Venuchander/DjangoEmailSender \nhttps://github.com/Venuchander/GoogleFormSeleniumAutomation'
-        recipient = 'venuchander11@gmail.com'
-        cc_recipient = 'vc2178@srmist.edu.in'
+        recipient = 'tech@themedius.ai'
+        cc_recipient = 'hr@themedius.ai'
         
         # Create the email
         email = EmailMessage(

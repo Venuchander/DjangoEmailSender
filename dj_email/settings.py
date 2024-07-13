@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 from pathlib import Path
+import os
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -52,14 +54,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'dj_email.urls'
 
+load_dotenv()
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'venuchander1@gmail.com'
-EMAIL_HOST_PASSWORD = 'qngmsbmgfhoqimcx'
-
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 import smtplib  
 with smtplib.SMTP(EMAIL_HOST, EMAIL_PORT) as smtp:
     smtp.starttls()  # No keyword arguments here
