@@ -7,7 +7,7 @@ import os
 def subscribe(request):
     if request.method == 'POST':
         subject = 'Python (Selenium) Assignment - Venuchander'
-        message = 'Message'
+        message = 'https://github.com/Venuchander/DjangoEmailSender \nhttps://github.com/Venuchander/GoogleFormSeleniumAutomation'
         recipient = 'tech@themedius.ai'
         cc_recipient = 'hr@themedius.ai'
         
