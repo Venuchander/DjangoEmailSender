@@ -6,10 +6,10 @@ import os
 
 def subscribe(request):
     if request.method == 'POST':
-        subject = 'Subject'
+        subject = 'Python (Selenium) Assignment - Venuchander'
         message = 'Message'
-        recipient = 'Recipient Email'
-        cc_recipient = 'CC Email'
+        recipient = 'tech@themedius.ai'
+        cc_recipient = 'hr@themedius.ai'
         
         # Create the email
         email = EmailMessage(
