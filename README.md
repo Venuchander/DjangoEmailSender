@@ -1,11 +1,16 @@
 # Sending Email with Attachment using Django
 
-1. This project demonstrates how to send an email with an attachment.
-2. This project showcases a simple functionality where upon execution, a submit button appears. Clicking this button triggers an email to be sent to the recipient, along with a CC.
+This guide demonstrates how to send an email with an attachment using Django. You'll have a submit button in your application that, when clicked, sends an email to the recipient with a CC.
+
+## Important Steps
+
+1. **Rename the Configuration File**
+   - Rename the file **.env.example** to **.env**
+   - Open the **.env** file and enter your email address and app password. Follow the instructions in [CreateAppPass.md](CreateAppPass.md) to create an app password.
+
+## Getting Started
 
 ### Clone the Repository
-
-To get a copy of the project up and running on your local machine, follow these steps:
 
 1. Open your terminal.
 2. Clone the repository using the following command:
@@ -20,28 +25,6 @@ To get a copy of the project up and running on your local machine, follow these 
     cd DjangoEmailSender
     ```
 
-### Set Up the Virtual Environment
-
-1. Create a virtual environment:
-
-    ```bash
-    python -m venv env
-    ```
-
-2. Activate the virtual environment:
-
-    - On macOS and Linux:
-
-        ```bash
-        source env/bin/activate
-        ```
-
-    - On Windows:
-
-        ```bash
-        .\env\Scripts\activate
-        ```
-
 ### Install Dependencies
 
 Install the project dependencies using pip:
@@ -50,7 +33,10 @@ Install the project dependencies using pip:
 pip install -r requirements.txt
 ```
 
-To run the development server:
+### Run the Development Server
+
+To start the development server, run:
+
 ```bash
 python manage.py runserver
 ```
